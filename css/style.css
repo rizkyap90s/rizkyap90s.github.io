@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+  background: black;
+  font-family: "Montserrat", sans-serif;
+}
+/* NAVBAR */
+.navbar {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  position: fixed;
+  transition: all 1s;
+  z-index: 100;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  height: 50vh;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-around;
+  padding-left: 1vh;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.2);
+  transition: all 0.5s;
+}
+.navbar ul li a:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255);
+}
+
+/* INTRO */
+.intro {
+  height: 100vh;
+  display: flex;
+  background-size: cover;
+  background-image: url("/assets/img/bgintro.jpg");
+  background-attachment: fixed;
+  background-position: center;
+}
+.intro .brand {
+  align-self: flex-start;
+  position: fixed;
+  padding: 3vh;
+  font-size: 3em;
+  font-family: "Great Vibes", cursive;
+  align-content: flex-start;
+}
+.intro .title {
+  width: 100%;
+  padding: 2vh;
+  font-size: 4em;
+  line-height: 0.7;
+  text-align: end;
+  align-self: flex-end;
+  display: inline-block;
+}
+
+.intro .title .dev {
+  font-size: 2.5em;
+  display: inline-block;
+  font-weight: bold;
+}
+.yellow {
+  color: yellow;
+}
+.edu {
+  min-height: 100vh;
+}
+.ability {
+  min-height: 100vh;
+}
+.product {
+  min-height: 100vh;
+}
+
+.gallery {
+  min-height: 100vh;
+}
+.contact {
+  min-height: 100vh;
+}
