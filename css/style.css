@@ -81,7 +81,6 @@ html {
   min-height: 100vh;
 }
 .ability .ability-content {
-  /* background-color: blue; */
   min-height: 100vh;
   margin-left: 15vh;
   margin-right: 5vh;
@@ -89,7 +88,6 @@ html {
   grid-template-columns: 1fr 1fr;
 }
 .programming-language-content {
-  /* background-color: rgba(255, 255, 255, 0.6); */
   max-width: 70vh;
   min-height: 30vh;
   padding: 5vh;
@@ -105,11 +103,6 @@ html {
   display: flex;
   justify-content: center;
 }
-/* .programming-language-content .img {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
-  border-radius: 5px;
-} */
 
 .programming-language-content img {
   max-width: 5vh;
