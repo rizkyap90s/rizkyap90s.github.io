@@ -76,11 +76,65 @@ html {
 .yellow {
   color: yellow;
 }
-.edu {
-  min-height: 100vh;
-}
+
 .ability {
   min-height: 100vh;
+}
+.ability .ability-content {
+  /* background-color: blue; */
+  min-height: 100vh;
+  margin-left: 15vh;
+  margin-right: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.programming-language-content {
+  /* background-color: rgba(255, 255, 255, 0.6); */
+  max-width: 70vh;
+  min-height: 30vh;
+  padding: 5vh;
+  opacity: 0;
+  margin-top: 50vh;
+  margin-left: 10vh;
+}
+.programming-language-content .title {
+  font-size: 2em;
+}
+.programming-language-content .desc {
+  line-height: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+/* .programming-language-content .img {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+} */
+
+.programming-language-content img {
+  max-width: 5vh;
+}
+.programming-language-content .kotlin {
+  max-height: 3.5vh;
+}
+
+.database-content {
+  max-width: 70vh;
+  min-height: 50vh;
+  margin-top: 50vh;
+  padding: 5vh;
+  opacity: 0;
+}
+.database-content .title {
+  font-size: 2em;
+}
+.database-content .desc {
+  line-height: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+.database-content img {
+  max-width: 5vh;
 }
 .product {
   min-height: 100vh;
