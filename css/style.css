@@ -104,17 +104,21 @@ html {
   padding: 5vh;
   opacity: 0;
 }
-.programming-language-content .title {
+.title {
   font-size: 2em;
+  margin-bottom: 10px;
 }
-.programming-language-content .desc {
+.desc {
   line-height: 1.5em;
+  margin-bottom: 10px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .programming-language-content img {
   max-width: 5vh;
 }
-.programming-language-content .kotlin {
+.kotlin {
   max-height: 3.5vh;
 }
 
@@ -125,12 +129,12 @@ html {
   padding: 5vh;
   opacity: 0;
 }
-.database-content .title {
+/* .database-content .title {
   font-size: 2em;
 }
 .database-content .desc {
   line-height: 1.5em;
-}
+} */
 .database-content img {
   max-width: 5vh;
 }
@@ -142,12 +146,12 @@ html {
   padding: 5vh;
   opacity: 0;
 }
-.editing-content .title {
+/* .editing-content .title {
   font-size: 2em;
 }
 .editing-content .desc {
   line-height: 1.5em;
-}
+} */
 .editing-content img {
   max-width: 5vh;
 }
