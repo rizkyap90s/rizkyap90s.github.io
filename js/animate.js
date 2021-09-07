@@ -17,6 +17,7 @@ const navside = document.querySelector(".navside");
 navside.classList.add("animate__animated", "animate__fadeInLeft");
 navside.style.setProperty("--animate-duration", "2s");
 
+const flowerVector = document.querySelector(".flower");
 const progLanguage = document.querySelector(".ability-content .programming-language-content");
 const database = document.querySelector(".ability-content .database-content");
 const editing = document.querySelector(".ability-content .editing-content");
@@ -24,6 +25,10 @@ const editing = document.querySelector(".ability-content .editing-content");
 // SCROLL DOWN
 window.addEventListener("scroll", function () {
   let currentScrollPos = window.pageYOffset;
+  if (currentScrollPos > 700) {
+    flowerVector.classList.add("animate__animated", "animate__fadeInRight");
+    flowerVector.style.opacity = "1";
+  }
   if (currentScrollPos > 1100) {
     progLanguage.classList.add("animate__animated", "animate__fadeInBottomRight");
     database.classList.add("animate__animated", "animate__fadeInBottomLeft");

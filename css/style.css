@@ -19,6 +19,9 @@ html {
   display: inline-block;
   width: 100vw;
 }
+.flower {
+  opacity: 0;
+}
 /* NAVBAR */
 .navbar {
   display: flex;
