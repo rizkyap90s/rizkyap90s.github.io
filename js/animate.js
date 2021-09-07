@@ -25,17 +25,17 @@ const editing = document.querySelector(".ability-content .editing-content");
 // SCROLL DOWN
 window.addEventListener("scroll", function () {
   let currentScrollPos = window.pageYOffset;
-  if (currentScrollPos > 700) {
-    flowerVector.classList.add("animate__animated", "animate__fadeInRight");
+  if (currentScrollPos > 650) {
+    flowerVector.classList.add("animate__animated", "animate__zoomIn");
     flowerVector.style.opacity = "1";
   }
-  if (currentScrollPos > 1100) {
+  if (currentScrollPos > 900) {
     progLanguage.classList.add("animate__animated", "animate__fadeInBottomRight");
     database.classList.add("animate__animated", "animate__fadeInBottomLeft");
     progLanguage.style.opacity = "1";
     database.style.opacity = "1";
   }
-  if (currentScrollPos > 1200) {
+  if (currentScrollPos > 1000) {
     editing.classList.add("animate__animated", "animate__fadeInRightBig");
     editing.style.opacity = "1";
   }

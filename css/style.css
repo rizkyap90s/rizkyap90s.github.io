@@ -89,7 +89,7 @@ html {
 /* =======.ability======= */
 .ability {
   min-height: 100vh;
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 .ability .ability-content {
   min-height: 100vh;
@@ -97,7 +97,7 @@ html {
   margin-right: 5vh;
   display: grid;
   padding-left: 50px;
-  gap: 10vh;
+  gap: 5vh;
   grid-template-columns: repeat(auto-fit, minmax(60vh, 1fr));
 }
 .programming-language-content {
