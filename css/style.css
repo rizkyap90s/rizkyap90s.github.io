@@ -13,6 +13,12 @@ html {
   background: black;
   font-family: "Montserrat", sans-serif;
 }
+.div-flower {
+  padding-top: 50vh;
+  text-align: center;
+  display: inline-block;
+  width: 100vw;
+}
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -80,7 +86,7 @@ html {
 /* =======.ability======= */
 .ability {
   min-height: 100vh;
-  margin-top: 50vh;
+  margin-top: 20vh;
 }
 .ability .ability-content {
   min-height: 100vh;
