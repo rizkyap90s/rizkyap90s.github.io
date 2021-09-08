@@ -92,7 +92,7 @@ html {
   min-height: 100vh;
   margin-top: 10vh;
 }
-.ability .ability-container {
+.ability-container {
   min-height: 100vh;
   margin-left: 15vh;
   margin-right: 5vh;
@@ -141,6 +141,14 @@ html {
 /* //=========.product======== */
 .product {
   min-height: 100vh;
+}
+.product-container {
+  /* background: blue; */
+  min-height: 100vh;
+  margin-left: 15vh;
+  margin-right: 5vh;
+  display: grid;
+  padding-left: 50px;
 }
 
 .gallery {

@@ -1,0 +1,27 @@
+@media (max-width: 670px) {
+  .intro .title .dev {
+    font-size: 0.8em;
+    content: "DEV<br>ELO<br>PER";
+  }
+  .intro .title .jun {
+    font-size: 0.5em;
+  }
+  .navbar {
+    display: none;
+  }
+  .flower {
+    padding-top: 50vh;
+    opacity: 0;
+    max-width: 40vw;
+  }
+  .ability-container {
+    margin-left: 5vh;
+    margin-right: 5vh;
+    gap: 2vh;
+    padding-left: 0;
+  }
+
+  .flower-2 {
+    max-width: 60vw;
+  }
+}
