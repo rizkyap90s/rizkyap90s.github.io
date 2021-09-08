@@ -18,9 +18,11 @@ navside.classList.add("animate__animated", "animate__fadeInLeft");
 navside.style.setProperty("--animate-duration", "2s");
 
 const flowerVector = document.querySelector(".flower");
-const progLanguage = document.querySelector(".ability-content .programming-language-content");
-const database = document.querySelector(".ability-content .database-content");
-const editing = document.querySelector(".ability-content .editing-content");
+const progLanguage = document.querySelector(".ability-container .programming-language-content");
+const database = document.querySelector(".ability-container .database-content");
+const editing = document.querySelector(".ability-container .editing-content");
+const tools = document.querySelector(".ability-container .tools-content");
+const flowerVector2 = document.querySelector(".flower-2");
 
 // SCROLL DOWN
 window.addEventListener("scroll", function () {
@@ -30,13 +32,23 @@ window.addEventListener("scroll", function () {
     flowerVector.style.opacity = "1";
   }
   if (currentScrollPos > 900) {
-    progLanguage.classList.add("animate__animated", "animate__fadeInBottomRight");
-    database.classList.add("animate__animated", "animate__fadeInBottomLeft");
+    progLanguage.classList.add("animate__animated", "animate__fadeInLeftBig");
+    database.classList.add("animate__animated", "animate__fadeInRightBig");
+    progLanguage.style.setProperty("--animate-duration", "2s");
+    database.style.setProperty("--animate-duration", "2s");
     progLanguage.style.opacity = "1";
     database.style.opacity = "1";
   }
-  if (currentScrollPos > 1000) {
-    editing.classList.add("animate__animated", "animate__fadeInRightBig");
+  if (currentScrollPos > 1100) {
+    editing.classList.add("animate__animated", "animate__fadeInLeftBig");
+    tools.classList.add("animate__animated", "animate__fadeInRightBig");
+    editing.style.setProperty("--animate-duration", "2s");
+    tools.style.setProperty("--animate-duration", "2s");
     editing.style.opacity = "1";
+    tools.style.opacity = "1";
+  }
+  if (currentScrollPos > 1500) {
+    flowerVector2.classList.add("animate__animated", "animate__zoomIn");
+    flowerVector2.style.opacity = "1";
   }
 });

@@ -4,7 +4,6 @@
   color: white;
   box-sizing: border-box;
 }
-
 body {
   overflow-x: hidden;
 }
@@ -12,15 +11,6 @@ html {
   scroll-behavior: smooth;
   background: black;
   font-family: "Montserrat", sans-serif;
-}
-.div-flower {
-  padding-top: 50vh;
-  text-align: center;
-  display: inline-block;
-  width: 100vw;
-}
-.flower {
-  opacity: 0;
 }
 /* NAVBAR */
 .navbar {
@@ -86,12 +76,23 @@ html {
   color: yellow;
 }
 
+.div-flower {
+  text-align: center;
+  display: inline-block;
+  width: 100vw;
+}
+.flower {
+  padding-top: 50vh;
+  opacity: 0;
+  min-width: 60vw;
+}
+
 /* =======.ability======= */
 .ability {
   min-height: 100vh;
   margin-top: 10vh;
 }
-.ability .ability-content {
+.ability .ability-container {
   min-height: 100vh;
   margin-left: 15vh;
   margin-right: 5vh;
@@ -100,63 +101,41 @@ html {
   gap: 5vh;
   grid-template-columns: repeat(auto-fit, minmax(60vh, 1fr));
 }
-.programming-language-content {
+.ability-content {
   /* background-color: blue; */
   max-width: 100vh;
   max-height: 50vh;
   padding: 5vh;
-  opacity: 0;
 }
-.title {
+.ability .title {
   font-size: 2em;
   margin-bottom: 10px;
 }
-.desc {
+.ability .desc {
   line-height: 1.5em;
   margin-bottom: 10px;
   text-align: justify;
   text-justify: inter-word;
 }
 
-.programming-language-content img {
+.ability img {
   max-width: 5vh;
 }
 .kotlin {
-  max-height: 3.5vh;
+  max-height: 3.7vh;
 }
 
-.database-content {
-  /* background-color: blue; */
-  max-width: 100vh;
-  max-height: 50vh;
-  padding: 5vh;
+.editing-content,
+.database-content,
+.programming-language-content,
+.tools-content {
   opacity: 0;
-}
-/* .database-content .title {
-  font-size: 2em;
-}
-.database-content .desc {
-  line-height: 1.5em;
-} */
-.database-content img {
-  max-width: 5vh;
 }
 
-.editing-content {
-  /* background-color: blue; */
-  max-width: 100vh;
-  max-height: 50vh;
-  padding: 5vh;
+.flower-2 {
+  padding-top: 30vh;
   opacity: 0;
-}
-/* .editing-content .title {
-  font-size: 2em;
-}
-.editing-content .desc {
-  line-height: 1.5em;
-} */
-.editing-content img {
-  max-width: 5vh;
+  max-width: 25vw;
 }
 
 /* //=========.product======== */
