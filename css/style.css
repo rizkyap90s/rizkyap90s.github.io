@@ -6,10 +6,10 @@
 }
 body {
   overflow-x: hidden;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 html {
-  max-width: 100%;
+  /* max-width: 100%; */
   overflow-x: hidden;
   scroll-behavior: smooth;
   background: black;
