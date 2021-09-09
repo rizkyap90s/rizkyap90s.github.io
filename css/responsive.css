@@ -1,7 +1,6 @@
-@media (max-width: 670px) {
+@media (max-width: 600px) {
   .intro .title .dev {
     font-size: 0.8em;
-    content: "DEV<br>ELO<br>PER";
   }
   .intro .title .jun {
     font-size: 0.5em;
@@ -15,9 +14,10 @@
     max-width: 40vw;
   }
   .ability-container {
+    /* background-color: blue; */
     margin-left: 5vh;
     margin-right: 5vh;
-    gap: 2vh;
+    gap: 5vh;
     padding-left: 0;
   }
 

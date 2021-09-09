@@ -27,23 +27,19 @@ const flowerVector2 = document.querySelector(".flower-2");
 // SCROLL DOWN
 window.addEventListener("scroll", function () {
   let currentScrollPos = window.pageYOffset;
-  if (currentScrollPos > 650) {
+  if (currentScrollPos > 600) {
     flowerVector.classList.add("animate__animated", "animate__zoomIn");
     flowerVector.style.opacity = "1";
   }
   if (currentScrollPos > 900) {
     progLanguage.classList.add("animate__animated", "animate__fadeInLeftBig");
     database.classList.add("animate__animated", "animate__fadeInRightBig");
-    progLanguage.style.setProperty("--animate-duration", "2s");
-    database.style.setProperty("--animate-duration", "2s");
     progLanguage.style.opacity = "1";
     database.style.opacity = "1";
   }
   if (currentScrollPos > 1100) {
     editing.classList.add("animate__animated", "animate__fadeInLeftBig");
     tools.classList.add("animate__animated", "animate__fadeInRightBig");
-    editing.style.setProperty("--animate-duration", "2s");
-    tools.style.setProperty("--animate-duration", "2s");
     editing.style.opacity = "1";
     tools.style.opacity = "1";
   }
