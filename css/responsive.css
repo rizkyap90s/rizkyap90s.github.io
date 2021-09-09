@@ -32,7 +32,7 @@
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 350px) {
   .ability .desc {
     font-size: 0.9em;
     margin-right: 15vw;
