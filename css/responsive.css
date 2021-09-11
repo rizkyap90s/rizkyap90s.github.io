@@ -1,3 +1,8 @@
+@media (max-width: 1100px) {
+  .indev {
+    display: flex;
+  }
+}
 @media (max-width: 600px) {
   .intro .title .dev {
     font-size: 0.8em;
