@@ -17,17 +17,18 @@ html {
 }
 
 /* INDEV */
-.indev {
-  width: 100vw;
-  height: 100%;
+/* .indev {
+  width: 50vw;
+  height: 50vh;
   overflow: hidden;
   position: fixed;
   z-index: 20;
-  display: none;
+  background-color: rgb(255, 255, 255);
+  display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
   flex-direction: column;
+  color: rgb(75, 75, 75);
 }
 .indev p {
   margin-bottom: 5vh;
@@ -37,10 +38,10 @@ html {
   margin-right: 10vw;
   text-align: center;
 }
-.indev a {
-  font-size: 1.5em;
-  font-weight: bold;
-}
+.indev .tap {
+  font-size: 1.2em;
+  text-decoration: underline;
+} */
 
 /* NAVBAR */
 .navbar {
