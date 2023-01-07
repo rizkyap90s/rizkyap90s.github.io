@@ -1,51 +1,285 @@
-*{padding: 0;margin: 0;font-family: 'Poppins', sans-serif;}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;}
+
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-20deg, rgb(85, 85, 85) 50%, #000 30%);
+    bottom:0;
+    left:-100%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  
+  h1 {
+    font-family:monospace;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
 
 .container {
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
     background-size: cover;
     background-position: center;
-    background-image: url('/assets/media/images/bg.webp');
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
- .container h1 {
+.container h1 a{
+    text-decoration: none;
     color: white;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 100px;
- }
-
-.container ul > li {
-    margin: auto;
-    color: white;
-    letter-spacing: 2px;
-    margin: 30px;
-    font-weight: 100;
-    font-size: 70px;
-    display: inline-block;
-    transition-timing-function: linear;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.container ul > li:hover {
-    transform: scale(1.2);
-    font-weight: bold;
-    text-decoration: underline;
-    opacity: 0.8;
-    text-decoration-color: red;
-}
-
-.container .content-box {
-    height: 80vh;
-    width: 80vw;
-    margin: auto;
     position: fixed;
-    background-color: white;
-    border-radius: 50px;
+    left: 0;
+    top: 0;
+    font-weight: 200;
+    margin: 20px;
+
+}
+.container .hint{
+    max-width: 30%;
+    padding: 10px;
+    display: block;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    visibility: hidden;
+    border-radius: 10px;
+    transition: linear 0.3s;
+}
+
+.container .list {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    gap: 5vw;
+}
+.container .list h6 {
+    display: inline;
+    font-weight: 100;
+    font-size: 75px;
+    color: white;
+    transition: linear 0.3s;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+.container .list h6:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 5px;
+    text-decoration-color: yellow;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    box-shadow: 0px 0px 15px #000;
+}
+
+.bg-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+    z-index: 1;
     display: none;
+    position: fixed;
+}
+
+.content {
+    max-width: 80%;
+    max-height: 80%;
+    z-index: 2;
+    position: fixed;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    padding: 70px;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px #000;
+}
+
+.content-profile,
+.content-skill,
+.content-experience {
+    display: none;
+}
+
+table, th, td {
+    vertical-align: top;
+  }
+
+.exit {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    margin: 20px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    transition: all .3s;
+}
+.exit:hover {
+    transform: scale(0.8);
+}
+/* CONTACT */
+.wrapper {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    /* width: 100%; */
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .linkedin:hover,
+  .wrapper .linkedin:hover .tooltip,
+  .wrapper .linkedin:hover .tooltip::before {
+    background: #1877F2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #1DA1F2;
+    color: #fff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #E4405F;
+    color: #fff;
+  }
+  
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background: #000000;
+    color: #fff;
+  }
+  
+ 
+
+/* RESPONSIVE */
+
+@media (max-width: 1020px) {
+    .container .list {
+        gap: 1vw;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .container .list {
+        flex-direction: column;
+    }
+    .container .list h6 {
+        text-align: center;
+        padding: 5px;
+        font-size: 40px;
+    }
+    .container h1 a{
+        font-size: 30px;
+    }
+
+
 }

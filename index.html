@@ -8,25 +8,132 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/lightbox.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <title>Document</title>
+    <title>ky.</title>
 </head>
 <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
     <div class="container">
-        <h1 class="title animate__animated animate__heartBeat animate__infinite">KONTOL MANSYUR</h1>
-        <ul>
-            <li>Profile</li>
-            <li>Skill</li>
-            <li>Experience</li>
-        </ul>
-        <div class="content-box content-profile">
+        <h1>
+            <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, it`s Rezki ", "welcome to my page. . . ", "thank you for coming here ;) ", "❤" ]'>
+              <span class="wrap"></span>
+            </a>
+        </h1>
+        <div class="list">
+            <h6 class="profile" onclick="clickProfile()" onmouseover="showProfileHint()" onmouseleave="hideProfileHint()">Profile</h6>
+            <h6 class="skill" onclick="clickSkill()" onmouseover="showSkillHint()" onmouseleave="hideSkillHint()">Skill</h6>
+            <h6 class="experience" onclick="clickExperience()" onmouseover="showExperienceHint()" onmouseleave="hideExperienceHint()">Experience</h6>
+        </div>    
+        <p class="hint"></p>
+
+        <ul class="wrapper">
+            <a href="https://www.linkedin.com/in/rizkyap90s/" target="_blank">
+                <li class="icon linkedin">
+                    <span class="tooltip">LinkedIn</span>
+                    <span><i class="fab fa-linkedin-f"></i></span>
+                </li>
+            </a>
             
+            <a href="https://twitter.com/rizkyap90s" target="_blank">
+                <li class="icon twitter">
+                    <span class="tooltip">Twitter</span>
+                    <span><i class="fab fa-twitter"></i></span>
+                </li>
+            </a>
+          
+            <a href="https://www.instagram.com/rizkyap90s/" target="_blank">
+                <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <span><i class="fab fa-instagram"></i></span>
+                </li>
+            </a>
+            
+            <a href="https://github.com/rizkyap90s/" target="_blank">
+                <li class="icon github">
+                    <span class="tooltip">Github</span>
+                    <span><i class="fab fa-github"></i></span>
+                </li>
+            </a>
+        </ul>
+
+        <div class="bg-content"></div>
+
+        <div class="content content-profile">
+            <img onclick="resetContent()" class="exit" src="assets/media/images/close.png" alt="">
+            <p style="margin-bottom: 50px;"><strong style="display: block;">Summary:</strong> High curiosity and enthusiast in learning.
+                Started coding in 2017 as an android developer, graduated as a bachelor of informatics engineering in August 2020. Become awardee of GlintsXAmman batch 13 in June-October 2021. Currently working as a backend developer.</p>
+            
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>: Rezki Ade Pratama P.</td>
+                </tr>
+                <tr>
+                    <td>Nick</td>
+                    <td>: Kiky, Rezki, Ade</td>
+                </tr>
+                <tr>
+                    <td>Last Education</td>
+                    <td>: Bachelor degree</td>
+                </tr>
+                <tr>
+                    <td>Hometown</td>
+                    <td>: Sumbawa, NTB</td>
+                </tr>
+                <tr>
+                    <td>Domicile</td>
+                    <td>: Malang, East Java</td>
+                </tr>
+            </table>
         </div>
 
+        <div class="content content-skill">
+            <img onclick="resetContent()" class="exit" src="assets/media/images/close.png" alt="">
+
+            <p style="margin-bottom: 50px;"><strong style="display: block;">Summary:</strong> High curiosity and enthusiast in learning.
+                Started coding in 2017 as an android developer, graduated as a bachelor of informatics engineering in August 2020. Become awardee of GlintsXAmman batch 13 in June-October 2021. Currently working as a backend developer.</p>
+
+            <table>
+                <tr>
+                    <td>Programming Languange</td>
+                    <td>: JavaScript (Intermediate), Java (Intermediate), PHP (Intermediate), Kotlin (Beginner), Go (Beginner)</td>
+                </tr>
+                <tr>
+                    <td>Frameworks</td>
+                    <td>: SpringBoot, ExpressJS, Mongoose, Sequelize</td>
+                </tr>
+                <tr>
+                    <td>Database</td>
+                    <td>: MySQL, MongoDB, Oracle Database</td>
+                </tr>
+                <tr>
+                    <td>Programming Tools</td>
+                    <td>: Github/Gitlab/BitBucket (Version Control), Postman (Testing & Documentation), Firebase (Baas), Trello (Management), Jira (Management),Agile Scrum (Management)</td>
+                </tr>
+                <tr>
+                    <td>Editing Tools</td>
+                    <td>: Photoshop</td>
+                </tr>
+
+                <tr>
+                    <td>Office</td>
+                    <td>: Ms. Word (Beginner), Ms. Excel (Beginner), Ms. PowerPoint (Beginner)</td>
+                </tr>
+            </table>   
+        </div>
+
+        <div class="content content-experience">
+            <img onclick="resetContent()" class="exit" src="assets/media/images/close.png" alt="">
+
+        </div>
         
     </div>
 
-    
-    <script src="assets/js/lightbox.js"></script>
+  
+
+
+    <script src="assets/js/typewriter.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
